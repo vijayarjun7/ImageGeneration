@@ -6,12 +6,7 @@ import io
 from io import BytesIO
 
 token ="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"
-def query(payload):
-	response = requests.post(API_URL, headers=headers, json=payload)
-	return response.content
-image_bytes = query({
-	"inputs": "Astronaut riding a horse",
-})
+
 def Anime_df(token,inputs_value,height_value,width_value,guidance_scale_value,num_inference_steps_value,max_sequence_length_value):
   API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
   headers = {"Authorization": f"Bearer {token}"}
