@@ -1,5 +1,5 @@
 import requests
-#import streamlit as st
+import streamlit as st
 import io
 from PIL import Image
 import io
