@@ -4,6 +4,7 @@ import io
 from PIL import Image
 import io
 from io import BytesIO
+from dotenv import load_dotenv
 load_dotenv()
 token = st.secrets['HUGGINGFACE_TOKEN_KEY']
 
