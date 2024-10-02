@@ -7,7 +7,10 @@ from io import BytesIO
 from dotenv import load_dotenv
 load_dotenv()
 token = st.secrets['HUGGINGFACE_TOKEN_KEY']
-
+st.set_page_config(
+        page_title="Generative Image",
+)
+display_Anime_df(token)
 
 
 def Anime_df(token,inputs_value,height_value,width_value,guidance_scale_value,num_inference_steps_value,max_sequence_length_value):
